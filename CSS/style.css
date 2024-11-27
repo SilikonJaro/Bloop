@@ -1,5 +1,6 @@
 
 .TheButton {
+    z-index: 2;
     aspect-ratio: 1 / 1;
     width: 30%;
     position: absolute;
@@ -18,4 +19,72 @@
     aspect-ratio: 1 / 1;
     width: 31%;
     background-image: url(../IMGS/Bob_B.png);
+}
+
+.TheButton:active {
+    aspect-ratio: 1 / 1;
+    width: 29%;
+    background-image: url(../IMGS/Bob_B.png);
+}
+
+body {
+    z-index: 0;
+    margin: none;
+    padding: none;
+    background: repeating-linear-gradient(
+        90deg,
+        #ff86c8 25%,
+        #ff86c8 50%,
+        #ffbf81 50%,
+        #ffbf81 75%);
+    background-size: 10% 10%;
+    animation: animation linear 120s ;
+    animation-iteration-count: infinite;
+}
+
+.Shadow {
+    z-index: 1;
+    margin: none;
+    padding: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: radial-gradient(rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.605) 100%);
+}
+
+@keyframes animation {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.TextBar {
+    z-index: 3;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    width: 100%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+}
+
+.TextBar p {
+    padding-inline: 50px;
+    display: inline-block;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    text-shadow:black 1px 1px 1px;
 }
