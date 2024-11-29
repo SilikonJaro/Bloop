@@ -1,8 +1,13 @@
 
+@font-face{
+    font-family: Daydream;
+    src: url(../FNDS/Daydream.ttf);
+}
+
 .TheButton {
     z-index: 2;
     aspect-ratio: 1 / 1;
-    width: 30%;
+    width: 35%;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -17,14 +22,14 @@
 
 .TheButton:hover {
     aspect-ratio: 1 / 1;
-    width: 31%;
+    width: 37%;
     background-image: url(../IMGS/Bob_B.png);
 }
 
 .TheButton:active {
     aspect-ratio: 1 / 1;
-    width: 29%;
-    background-image: url(../IMGS/Bob_B.png);
+    width: 33%;
+    background-image: url(../IMGS/Bob_P.png);
 }
 
 body {
@@ -33,10 +38,12 @@ body {
     padding: none;
     background: repeating-linear-gradient(
         90deg,
-        #ff86c8 25%,
-        #ff86c8 50%,
-        #ffbf81 50%,
-        #ffbf81 75%);
+        #ff8dd9 0%,
+        #f99fdb 25%,
+        #ff8dd9 50%,
+        #b0fc81 50%,
+        #bafb91 75%,
+        #b0fc81 100%);
     background-size: 10% 10%;
     animation: animation linear 120s ;
     animation-iteration-count: infinite;
@@ -52,7 +59,7 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background: radial-gradient(rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.605) 100%);
+    background: radial-gradient(rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.69) 100%);
 }
 
 @keyframes animation {
@@ -81,10 +88,17 @@ body {
 }
 
 .TextBar p {
+    font-family: Daydream;
+    font-size: 25px;
     padding-inline: 50px;
     display: inline-block;
     font-weight: 500;
     color: white;
     text-decoration: none;
-    text-shadow:black 1px 1px 1px;
+    text-shadow:black 3px 3px 1px;
+}
+
+
+audio {
+    z-index: 99;
 }

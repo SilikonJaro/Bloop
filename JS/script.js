@@ -8,3 +8,8 @@ function Click() {
     score = score + (clickCount * clickMulti);
     console.log(score);
 }
+
+function PlayMusic() {
+    let audio = new Audio("./SOUNDS/ReadyPixelOne.mp3");
+    audio.play();
+}
