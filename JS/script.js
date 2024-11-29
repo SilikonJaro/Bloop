@@ -14,7 +14,7 @@ function Click() {
 
 function BuyCount() {
     if (score >= CountPrise ) {
-        console.log("buy cound for 10");
+        console.log("buy cound for 100");
         score = score - CountPrise;
         clickCount = clickCount + 1;
     } else {
@@ -24,7 +24,7 @@ function BuyCount() {
 
 function BuyMulti() {
     if (score >= MultiPrise ) {
-        console.log("buy multi for 100");
+        console.log("buy multi for 1000");
         score = score - MultiPrise;
         clickCount = clickCount + 1;
     } else {
