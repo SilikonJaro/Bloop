@@ -97,8 +97,3 @@ body {
     text-decoration: none;
     text-shadow:black 3px 3px 1px;
 }
-
-
-audio {
-    z-index: 99;
-}
