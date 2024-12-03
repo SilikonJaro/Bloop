@@ -10,7 +10,7 @@
     width: 30%;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 55%;
     transform: translate(-50%, -50%);
     border: none;
     background-position: center;
@@ -97,30 +97,5 @@ body {
     font-weight: 500;
     color: white;
     text-decoration: none;
-    text-shadow:black calc(1px + 1vh) calc(1px + 1vh) 1px;
-}
-
-
-
-
-
-
-
-
-
-
-
-.Test01 {
-    aspect-ratio: 1 / 1;
-    width: 30%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.Test02 {
-    font-size:  calc(1vw + 1vh);
-    color: red;
-    z-index: 99;
+    text-shadow:black 1% 1% 1px;
 }
