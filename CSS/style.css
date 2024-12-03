@@ -7,7 +7,7 @@
 .TheButton {
     z-index: 2;
     aspect-ratio: 1 / 1;
-    width: 35%;
+    width: 30%;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -22,13 +22,13 @@
 
 .TheButton:hover {
     aspect-ratio: 1 / 1;
-    width: 37%;
+    width: 32%;
     background-image: url(../IMGS/Bob_B.png);
 }
 
 .TheButton:active {
     aspect-ratio: 1 / 1;
-    width: 33%;
+    width: 28%;
     background-image: url(../IMGS/Bob_P.png);
 }
 
