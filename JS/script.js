@@ -17,7 +17,6 @@ const ScoreText = document.getElementById("Score")
 ///////////////////////
 
 function PlayMusic() {
-    let audio = new Audio("./SOUNDS/ReadyPixelOne.mp3");
     audio.play();
 }
 
@@ -27,7 +26,6 @@ function Click() {
     score = score + (clickCount * clickMulti);
     console.log(score);
     UpdateScore();
-    PlayMusic();
 }
 
 function BuyCount() {
