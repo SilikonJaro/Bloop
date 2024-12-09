@@ -7,10 +7,10 @@ let score = 0;
 let clickCount = 1;
 let clickMulti = 1;
 const CountPrice = 100;
-const MultiPrice = 1000;
+const MultiPrice = 500;
 
 const audio = new Audio("./SOUNDS/ReadyPixelOne.mp3");
-const ScoreText = document.getElementById("Score")
+const ScoreText = document.getElementById("Score");
 
 ///////////////////////
 ////// Functions //////
@@ -34,6 +34,7 @@ function BuyCount() {
         score = score - CountPrice;
         clickCount = clickCount + 1;
         UpdateScore();
+        UpdatePriceCount();
     } else {
         console.log("dont have money");
     }
@@ -50,7 +51,7 @@ function BuyMulti() {
     }
 }
 
-/// Update text ///
+/// Update score text ///
 
 function UpdateScore() {
     ScoreText.innerHTML = "Money " + score;
