@@ -9,6 +9,14 @@ let clickMulti = 1;
 const CountPrice = 100;
 const MultiPrice = 500;
 
+let Event01 = false;
+let Event02 = false;
+let Event03 = false;
+let Event04 = false;
+
+let CloseTextMesCount = 1;
+const CountMustToClose = 2;
+
 const audio = new Audio("./SOUNDS/ReadyPixelOne.mp3");
 const RefScoreText = document.getElementById("Score");
 
@@ -38,7 +46,6 @@ function BuyCount() {
         score = score - CountPrice;
         clickCount = clickCount + 1;
         UpdateScore();
-        UpdatePriceCount();
     } else {
         console.log("dont have money");
     }
@@ -64,16 +71,15 @@ function UpdateScore() {
 /// Check score to run event ///
 
 function EventCheckCount() {
-    switch (score) {
-        case 2:
-            TextMessage("LOWPlOP");
-          break;
-        case 5:
-            console.log("5 event");
-          break;
-        default:
-            console.log("No event");
+    if (score >= 50 && Event01 == false) {
+        TextMessage("Yes keep going!!!");
+        Event01 = true;
     }
+    else if (score >= 500 && Event02 == false) {
+        TextMessage("ooh...");
+        Event02 = true;
+    }
+
 }
 
 ////// Events functions //////
@@ -82,4 +88,13 @@ function TextMessage(TextM) {
     console.log(TextM);
     RefMessageCont.style.display = "flex";
     RefMessageText.innerHTML = TextM;
+}
+
+function CloseTextMessage() {
+    if (CloseTextMesCount == CountMustToClose) {
+        RefMessageCont.style.display = "none";
+        CloseTextMesCount = 0;
+    } else {
+        CloseTextMesCount = CloseTextMesCount + 1;
+    }
 }
