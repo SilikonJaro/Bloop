@@ -80,7 +80,6 @@ function EventCheckCount() {
 
 function TextMessage(TextM) {
     console.log(TextM);
-    RefMessageText.style.display = "flex";
-    
-    RefScoreText.innerHTML = TextM;
+    RefMessageCont.style.display = "flex";
+    RefMessageText.innerHTML = TextM;
 }
