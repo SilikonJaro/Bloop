@@ -125,3 +125,28 @@ body {
     background: rgba(0, 0, 0, 0.045);
     border-radius: 6px;
 }
+
+#MessageCont {
+    background-image: linear-gradient(rgba(55, 55, 55, 0.95), rgba(29, 0, 0, 0.95), rgb(55, 55, 55, 0.95));
+    z-index: 4;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+}
+
+#MessageText {
+    font-family: Daydream;
+    font-size:  calc(1vw + 4vh);
+    padding-inline: 1%;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: red;
+}

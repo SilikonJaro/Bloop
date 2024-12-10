@@ -10,7 +10,10 @@ const CountPrice = 100;
 const MultiPrice = 500;
 
 const audio = new Audio("./SOUNDS/ReadyPixelOne.mp3");
-const ScoreText = document.getElementById("Score");
+const RefScoreText = document.getElementById("Score");
+
+const RefMessageText = document.getElementById("MessageText");
+const RefMessageCont = document.getElementById("MessageCont");
 
 ///////////////////////
 ////// Functions //////
@@ -26,6 +29,7 @@ function Click() {
     score = score + (clickCount * clickMulti);
     console.log(score);
     UpdateScore();
+    EventCheckCount();
 }
 
 function BuyCount() {
@@ -54,5 +58,29 @@ function BuyMulti() {
 /// Update score text ///
 
 function UpdateScore() {
-    ScoreText.innerHTML = "Money " + score;
+    RefScoreText.innerHTML = "Money " + score;
+}
+
+/// Check score to run event ///
+
+function EventCheckCount() {
+    switch (score) {
+        case 2:
+            TextMessage("LOWPlOP");
+          break;
+        case 5:
+            console.log("5 event");
+          break;
+        default:
+            console.log("No event");
+    }
+}
+
+////// Events functions //////
+
+function TextMessage(TextM) {
+    console.log(TextM);
+    RefMessageText.style.display = "flex";
+    
+    RefScoreText.innerHTML = TextM;
 }
