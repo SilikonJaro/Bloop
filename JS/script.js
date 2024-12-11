@@ -9,17 +9,18 @@ let clickMulti = 1;
 const CountPrice = 100;
 const MultiPrice = 500;
 
+let CloseTextMesCount = 1;
+const CountMustToClose = 2;
+
+/// Events state machine ///
 let Event01 = false;
 let Event02 = false;
 let Event03 = false;
 let Event04 = false;
 
-let CloseTextMesCount = 1;
-const CountMustToClose = 2;
-
+/// References ///
 const audio = new Audio("./SOUNDS/ReadyPixelOne.mp3");
 const RefScoreText = document.getElementById("Score");
-
 const RefMessageText = document.getElementById("MessageText");
 const RefMessageCont = document.getElementById("MessageCont");
 
@@ -79,7 +80,6 @@ function EventCheckCount() {
         TextMessage("ooh...");
         Event02 = true;
     }
-
 }
 
 ////// Events functions //////

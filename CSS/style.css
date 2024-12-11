@@ -59,12 +59,14 @@ body {
 
 .TheButton {
     z-index: 2;
+
     aspect-ratio: 1 / 1;
     width: 30%;
     position: absolute;
     left: 50%;
     top: 55%;
     transform: translate(-50%, -50%);
+
     border: none;
     background-position: center;
     background-size: contain;
@@ -89,17 +91,19 @@ body {
 /*/// Shop and money count ///*/
 /*////////////////////////////*/
 
-/*////// Shop and money Bar //////*/
+/*////// Bar of shop and money //////*/
 
 .TextBar {
     z-index: 3;
     display: flex;
+
     position: absolute;
     left: 50%;
     top: 10%;
     width: auto;
     height: auto;
     transform: translate(-50%, -50%);
+
     justify-content: center;
     align-items: center;
     padding: 10px;
@@ -154,14 +158,15 @@ body {
 #MessageCont {
     background-image: linear-gradient(rgba(55, 55, 55, 0.95), rgba(29, 0, 0, 0.95), rgb(55, 55, 55, 0.95));
     z-index: 4;
+    justify-content: center;
+    align-items: center;
+
     position: absolute;
     left: 50%;
     top: 50%;
     width: 100%;
     height: auto;
     transform: translate(-50%, -50%);
-    justify-content: center;
-    align-items: center;
 
     display: none;
 }
