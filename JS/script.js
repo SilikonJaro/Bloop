@@ -38,7 +38,7 @@ function Click() {
     score = score + (clickCount * clickMulti);
     console.log(score);
     UpdateScore();
-    EventCheckCount();
+    //EventCheckCount();
 }
 
 function BuyCount() {

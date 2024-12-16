@@ -70,7 +70,7 @@ body {
     transform: translate(-50%, -50%);
 
     border: none;
-    background-position: center;
+    /*/background-position: center; /*/
     background-size: contain;
     background-image: url(../IMGS/Bob_G.png);
     background-color: rgba(0, 0, 0, 0);
