@@ -13,10 +13,10 @@ let CloseTextMesCount = 1;
 const CountMustToClose = 2;
 
 /// Events state machine ///
-let Event01 = false;
-let Event02 = false;
-let Event03 = false;
-let Event04 = false;
+//let Event01 = false;
+//let Event02 = false;
+//let Event03 = false;
+//let Event04 = false;
 
 /// References ///
 const audio = new Audio("./SOUNDS/ReadyPixelOne.mp3");
