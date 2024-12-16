@@ -1,3 +1,4 @@
+
 /*/////////////*/
 /*/// Fonts ///*/
 /*/////////////*/
@@ -13,8 +14,6 @@
 
 body {
     z-index: 0;
-    margin: none;
-    padding: none;
     background: repeating-linear-gradient(
         90deg,
         #ff8dd9 0%,
@@ -62,15 +61,15 @@ body {
 .TheButton {
     z-index: 2;
 
+    position: absolute;
     aspect-ratio: 1 / 1;
     width: 30%;
-    position: absolute;
     left: 50%;
     top: 55%;
     transform: translate(-50%, -50%);
 
     border: none;
-    /*/background-position: center; /*/
+    /*/ background-position: center; /*/
     background-size: contain;
     background-image: url(../IMGS/Bob_G.png);
     background-color: rgba(0, 0, 0, 0);
@@ -122,6 +121,7 @@ body {
     padding-inline: 1%;
     display: inline-block;
     color: rgb(0, 0, 0);
+    
     text-decoration: none;
     text-align: center;
     background-image: linear-gradient(rgb(0, 136, 255), rgb(191, 0, 255));
