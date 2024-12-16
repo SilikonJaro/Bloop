@@ -43,23 +43,23 @@ function Click() {
 
 function BuyCount() {
     if (score >= CountPrice ) {
-        console.log("buy cound for 100");
+        console.log("Buy cound for "+ CountPrice);
         score = score - CountPrice;
         clickCount = clickCount + 1;
         UpdateScore();
     } else {
-        console.log("dont have money");
+        console.log("Dont have enough money");
     }
 }
 
 function BuyMulti() {
     if (score >= MultiPrice ) {
-        console.log("buy multi for 1000");
+        console.log("Buy multi for " + MultiPrice);
         score = score - MultiPrice;
         clickCount = clickCount + 1;
         UpdateScore();
     } else {
-        console.log("dont have money");
+        console.log("Dont have enough money");
     }
 }
 
