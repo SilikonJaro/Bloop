@@ -6,8 +6,8 @@ let score = 0;
 
 let clickCount = 1;
 let clickMulti = 1;
-const CountPrice = 100;
-const MultiPrice = 500;
+const CountPrice = 125;
+const MultiPrice = 999;
 
 let CloseTextMesCount = 1;
 const CountMustToClose = 2;
@@ -42,7 +42,7 @@ function Click() {
     score = score + (clickCount * clickMulti);
     console.log(score);
     UpdateScore();
-    //EventCheckCount(); //Its slow for checking score.
+    //EventCheckCount(); //Its slow not good :(
 }
 
 function BuyCount() {
