@@ -1,4 +1,6 @@
+
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -7,24 +9,32 @@
 
     <link rel="stylesheet" href="./CSS/style.css">
     <script src="./JS/script.js" defer></script>
-
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
 
+    <!-- Message -->
     <div id="MessageCont" onclick="CloseTextMessage()"><p id="MessageText">Message Here</p></div>
 
-    <div class="TextBar">
-        <button class="TextButton" onclick="BuyCount()"><p>Count -100</p></button>
-        <p id="Score">Money</p>
-        <button class="TextButton" onclick="BuyMulti()"><p>Multi -500</p></button> 
+    <!-- Top bar text -->
+    <div class="TextBarTop">
+        <button class="TextButton" onclick="BuyCount()"><p class="BarText">Count -100</p></button>
+        <p id="Score" class="BarText">Money</p>
+        <button class="TextButton" onclick="BuyMulti()"><p class="BarText">Multi -500</p></button> 
     </div>
+
+    <!-- The face in center lul -->
     <button class="TheButton" onclick="Click()"></button>
 
-    <div class="Shadow"></div>
-    
+    <!-- Bottom bar text -->
+    <div class="TextBarBotton">
+        <p id="Count" class="BarText">Count</p>
+        <p id="Multi" class="BarText">Multi</p>
+    </div>
+
 </body>
 
 </html>
