@@ -8,6 +8,11 @@
     src: url(../FNDS/Daydream.ttf);
 }
 
+@font-face{
+    font-family: LycheeSoda;
+    src: url(../FNDS/LycheeSoda.ttf);
+}
+
 /*//////////////////*/
 /*/// Background ///*/
 /*//////////////////*/
@@ -55,7 +60,7 @@ body::before {
 
     position: absolute;
     aspect-ratio: 1 / 1;
-    width: 30%;
+    width: 35%;
     left: 50%;
     top: 55%;
     transform: translate(-50%, -50%);
@@ -70,13 +75,13 @@ body::before {
 
 .TheButton:hover {
     aspect-ratio: 1 / 1;
-    width: 32%;
+    width: 37%;
     background-image: url(../IMGS/Bob_B.png);
 }
 
 .TheButton:active {
     aspect-ratio: 1 / 1;
-    width: 28%;
+    width: 33%;
     background-image: url(../IMGS/Bob_P.png);
 }
 
